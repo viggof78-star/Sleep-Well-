@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080f1e;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.app-container {
+    max-width: 480px;
+    margin: auto;
+    padding: 24px 20px;
+    background: linear-gradient(
+        180deg,
+        #101d35,
+        #080f1e
+    );
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #dce8ff;
+}
+
+.settings-btn {
+    background: #1b2c49;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.welcome {
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    color: #8ba9d8;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.welcome h1 {
+    font-size: 34px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.description {
+    color: #9cabc2;
+    font-size: 14px;
+}
+
+.sleep-card {
+    background: linear-gradient(
+        135deg,
+        #263f69,
+        #172846
+    );
+    border: 1px solid #405a80;
+    border-radius: 25px;
+    padding: 30px 20px;
+    text-align: center;
+    margin-bottom: 35px;
+    box-shadow: 0 10px 35px #00000040;
+}
+
+.moon-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.sleep-card h2 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.sleep-card p {
+    color: #b8c8df;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.start-btn {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 15px;
+    background: #8daeff;
+    color: #101d35;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sound-section {
+    margin-bottom: 35px;
+}
+
+.sound-section h2,
+.timer-section h2 {
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.sound-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.sound-card {
+    background: #172640;
+    border: 1px solid #293e60;
+    border-radius: 18px;
+    padding: 24px 10px;
+    color: white;
+    font-size: 32px;
+    transition: 0.3s;
+}
+
+.sound-card p {
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.sound-card:active {
+    background: #304b75;
+    transform: scale(0.96);
+}
+
+.timer-section {
+    margin-bottom: 30px;
+}
+
+.timer-options {
+    display: flex;
+    gap: 10px;
+}
+
+.timer-btn {
+    flex: 1;
+    padding: 13px 5px;
+    border: 1px solid #40577b;
+    border-radius: 12px;
+    background: #172640;
+    color: white;
+    font-size: 13px;
+}
+
+.timer-btn:focus {
+    background: #8daeff;
+    color: #101d35;
+}
+
+#timerDisplay {
+    color: #8daeff;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.player {
+    background: #1b2c49;
+    border: 1px solid #354d70;
+    border-radius: 18px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.player div {
+    flex: 1;
+}
+
+.player-title,
+.player p {
+    color: #9cabc2;
+    font-size: 12px;
+}
+
+.player h3 {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.player button {
+    background: #8daeff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    color: #71839f;
+    font-size: 12px;
+    line-height: 2
