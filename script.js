@@ -129,3 +129,53 @@ document.querySelectorAll(".timer-btn").forEach(button => {
         setTimer(Number(button.dataset.time));
     });
 });
+// SLEEP WELL APP
+
+let audio = new Audio();
+let timer = null;
+let isPlaying = false;
+
+const sounds = {
+    rain: "assets/sounds/rain.mp3",
+    ocean: "assets/sounds/ocean.mp3",
+    forest: "assets/sounds/forest.mp3",
+    fireplace: "assets/sounds/fireplace.mp3"
+};
+
+// เลือกเสียง
+function playSound(type) {
+    if (!sounds[type]) return;
+
+    clearTimeout(timer);
+
+    audio.pause();
+    audio.src = sounds[type];
+    audio.loop = true;
+    audio.volume = 0.7;
+
+    audio.play()
+        .then(() => {
+            isPlaying = true;
+            updateStatus(type);
+        })
+        .catch(error => {
+            console.log("Audio error:", error);
+        });
+}
+
+// หยุดเสียง
+function stopSound() {
+    audio.pause();
+    audio.currentTime = 0;
+    isPlaying = false;
+    clearTimeout(timer);
+
+    const status = document.getElementById("status");
+    if (status) status.textContent = "หยุดเล่นแล้ว";
+}
+
+// ตั้งเวลาปิดเสียง
+function setTimer(minutes) {
+    clearTimeout(timer);
+
+    timer = set
