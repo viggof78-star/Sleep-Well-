@@ -1,0 +1,19 @@
+{
+"name": "Sleep Well",
+"short_name": "Sleep Well",
+"description": "ผ่อนคลายและหลับสบายไปกับเสียงธรรมชาติ",
+"start_url": "./",
+"scope": "./",
+"display": "standalone",
+"background_color": "#080b24",
+"theme_color": "#171044",
+"orientation": "portrait",
+"icons": [
+{
+"src": "./sleep-well-icon-512.png",
+"sizes": "512x512",
+"type": "image/png",
+"purpose": "any"
+}
+]
+}
