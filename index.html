@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101827">
+    <title>Sleep Well</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+
+    <header class="header">
+        <div class="logo">🌙 Sleep Well</div>
+        <button class="settings-btn">⚙️</button>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <p class="subtitle">WELCOME TO YOUR PEACEFUL NIGHT</p>
+            <h1>คืนนี้พักผ่อน<br>ให้เต็มที่นะ</h1>
+            <p class="description">
+                ปล่อยใจให้สงบ แล้วเข้าสู่การพักผ่อน
+            </p>
+        </section>
+
+        <section class="sleep-card">
+            <div class="moon-icon">🌙</div>
+            <h2>พร้อมเข้านอนหรือยัง?</h2>
+            <p>เลือกเสียงที่ช่วยให้คุณผ่อนคลาย</p>
+            <button class="start-btn" id="startBtn">
+                เริ่มผ่อนคลาย
+            </button>
+        </section>
+
+        <section class="sound-section">
+            <h2>เสียงธรรมชาติ</h2>
+
+            <div class="sound-grid">
+                <button class="sound-card" data-sound="rain">
+                    🌧️ <p>เสียงฝนตก</p>
+                </button>
+
+                <button class="sound-card" data-sound="ocean">
+                    🌊 <p>เสียงคลื่นทะเล</p>
+                </button>
+
+                <button class="sound-card" data-sound="forest">
+                    🌲 <p>เสียงป่า</p>
+                </button>
+
+                <button class="sound-card" data-sound="fireplace">
+                    🔥 <p>เสียงเตาผิง</p>
+                </button>
+            </div>
+        </section>
+
+        <section class="timer-section">
+            <h2>ตั้งเวลาปิดเสียง</h2>
+
+            <div class="timer-options">
+                <button class="timer-btn" data-time="15">15 นาที</button>
+                <button class="timer-btn" data-time="30">30 นาที</button>
+                <button class="timer-btn" data-time="60">60 นาที</button>
+            </div>
+
+            <p id="timerDisplay">ยังไม่ได้ตั้งเวลา</p>
+        </section>
+
+        <section class="player">
+            <div>
+                <p>กำลังเล่น</p>
+                <h3 id="currentSound">ยังไม่ได้เลือกเสียง</h3>
+            </div>
+
+            <button id="playBtn">▶</button>
+            <button id="stopBtn">■</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Sleep Well © 2026</p>
+        <p>Take a deep breath. Relax. Sleep.</p>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
